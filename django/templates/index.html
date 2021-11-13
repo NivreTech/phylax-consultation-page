@@ -2,18 +2,26 @@
 {% load static %}
 {% block cta %}
 
-<section id="featured-destinations" class="featured-destinations bg-lightblue">
-  <div class="row no-gutters" style="background-color: #F28F50;">
+<section id="home" class="featured-destinations bg-lightblue">
+  <div class="row p-4 p-md-5 mb-4 text-white rounded" style="background-color: #F28F50;">
     <div class="col-12 col-md-6 d-flex align-items-center order-1 order-md-0" style="color: white;">
-      <div class="p-15 ml-5">
-        <h1>Wellness within your reach</h1>
-        <p><strong>Ålesund</strong> is a town and municipality in </p>
-        <button type="button" class="btn btn-light">Button</button>
+      <div class="p-10 ml-3">
+        <h1 style="font-family: 'Source Sans Pro'; font-size:xx-large; font-weight: 900; font-size: 70px;">Wellness within your reach</h1>
+        <p style="font-family: 'Open Sans'; font-weight:300; font-size: 21px;">Ålesund is a town and municipality in lorem ipsum malte youg chet brus jagget</p>
+        <div class="dropdown">
+          <a class="btn btn-success btn-rounded dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            Sign In
+          </a>
+        
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a href="{% url 'manage' %}" class="dropdown-item" href="#">Physician</a></li>
+            <li><a href="{% url 'appointment' %}" class="dropdown-item" href="#">Patient</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div class="col-12 col-md-6 order-0 order-md-1">
-      <div class="vh-100 cover" style="background-image: url('../static/img/girl.jpg'); width: 100%; height: auto;">
-      </div>
+    <div class="col-md-6 px-0">
+      <img class= "" alt= "" src="{% static 'img/girl.jpg' %}" style="max-height: 100%; max-width: 100%; object-fit: contain;">
     </div>
   </div>
 </section>
@@ -21,62 +29,64 @@
 {% endblock cta %}
 
 {% block content %}
+<section id="features">
+  <div class="container marketing py-5">
+    <div class="row text-center ">
+      <div class="col-lg-8 mx-auto">
+          <h1 class="display-4" style="font-family: 'Open Sans'; font-weight: 300;">Phylax</h1>
+          <p class="lead" style="font-family: 'Open Sans'; font-weight: 300; font-size: 21px;">Here are the features of Phylax.
+          </p>
+      </div>
+    </div>
+    <!-- Three columns of text below the carousel -->
+    <div class="row text-center py-5">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle mb-3" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#7189C4"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
-<div class="container marketing py-5">
-  <div class="row text-center ">
-    <div class="col-lg-8 mx-auto">
-        <h1 class="display-4">Phylax</h1>
-        <p class="lead">Here are the features of Phylax.
-        </p>
+        <h2 style="font-family: 'Source Sans Pro'; font-size:xx-large; font-weight: 900; font-size: 30px;">Heading</h2>
+        <p class="lead" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle mb-3" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#7189C4"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2 style="font-family: 'Source Sans Pro'; font-size:xx-large; font-weight: 900; font-size: 30px;">Heading</h2>
+        <p class="lead" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle mb-3" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#7189C4"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2 style="font-family: 'Source Sans Pro'; font-size:xx-large; font-weight: 900; font-size: 30px;">Heading</h2>
+        <p class="lead" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">And lastly this, the third column of representative placeholder content.</p>
+      </div><!-- /.col-lg-4 -->
     </div>
   </div>
-  <!-- Three columns of text below the carousel -->
-  <div class="row text-center py-5">
-    <div class="col-lg-4">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#7189C4"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+</section>
 
-      <h2>Heading</h2>
-      <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-      <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#7189C4"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-      <h2>Heading</h2>
-      <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-      <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#7189C4"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-      <h2>Heading</h2>
-      <p>And lastly this, the third column of representative placeholder content.</p>
-      <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-    </div><!-- /.col-lg-4 -->
-  </div>
-</div>
-
-<section id="team">
-  <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+<section id="newletters">
+  <div class="row p-4 p-md-5 mb-4 text-white rounded" style="background-color: #F28F50;">
     <div class="col-md-6 px-0">
-      <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
-      <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+      <h1 class="display-4 fst-italic" style="font-family: 'Source Sans Pro'; font-size:xx-large; font-weight: 900; font-size: 60px;">Title of a longer featured blog post</h1>
+      <p class="lead my-3" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
       <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
     </div>
+    <div class="col-md-6 px-0">
+      <img class= "" alt= "" src="{% static 'img/nurse.jpg' %}" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+    </div>
   </div>
 
-  <div class="row mb-2">
+  <div class="row mb-2" >
     <div class="col-md-5 mx-auto">
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary">World</strong>
-          <h3 class="mb-0">Featured post</h3>
-          <div class="mb-1 text-muted">Nov 12</div>
-          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="stretched-link">Continue reading</a>
+          <strong class="d-inline-block mb-2" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px; color:black;">World</strong>
+          <h3 class="mb-0"style="font-family: 'Source Sans Pro'; font-size:xx-large; font-weight: 900;">Featured post</h3>
+          <div class="mb-1 text-muted" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">Nov 12</div>
+          <p class="card-text mb-auto" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="stretched-link" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">Continue reading</a>
         </div>
         <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#7189C4"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
         </div>
       </div>
@@ -84,14 +94,14 @@
     <div class="col-md-5 mx-auto">
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success">Design</strong>
-          <h3 class="mb-0">Post title</h3>
-          <div class="mb-1 text-muted">Nov 11</div>
-          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="stretched-link">Continue reading</a>
+          <strong class="d-inline-block mb-2" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px; color: black;">Design</strong>
+          <h3 class="mb-0"style="font-family: 'Source Sans Pro'; font-size:xx-large; font-weight: 900;">Post title</h3>
+          <div class="mb-1 text-muted" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">Nov 11</div>
+          <p class="mb-auto" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="stretched-link" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">Continue reading</a>
         </div>
         <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#7189C4"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
         </div>
       </div>
@@ -99,79 +109,75 @@
   </div>
 </section>
 
-<section id="contact" class="card m-4 p-4">
-    <div class="container">
-        <div class="row text-center">
-          
-            <div class="col-sm-6">
-            <div class="contact-detail-box">
-              <i class="far fa-envelope text-colored fa-3x"></i>
-              <h4>Get In Touch</h4>
-              <abbr title="Phone">P:</abbr> (123) 456-7890<br>
-              E: <a href="mailto:email@email.com" class="text-muted">email@email.com</a>
-            </div>
-          </div><!-- end col -->
-  
-          <div class="col-sm-6">
-            <div class="contact-detail-box">
-              <i class="fa fa-map-marker fa-3x text-colored"></i>
-              <h4>Our Location</h4>
-  
-              <address>
-              795 Folsom Ave, Suite 600<br>
-              San Francisco, CA 94107<br>
-            </address>
-            </div>
-          </div><!-- end col -->
-  
-  
-  
-        </div>
-        <!-- end row -->
-  
-  
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="contact-map">
-              <iframe src="https://www.google.com/maps/embed/v1/place?q=New+York+University&amp;key=AIzaSyBSFRN6WWGYwmFi498qXXsD2UwkbmD74v4" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="width: 100%; height: 360px;"></iframe>
-            </div>
-          </div><!-- end col -->
-  
-          <!-- Contact form -->
-          <div class="col-sm-6">
-            <form role="form" name="ajax-form" id="ajax-form" method="post" class="form-main" action="{% url 'home' %}">
-            {% csrf_token %}
-              <div class="form-group">
-                <label for="name2">Name</label>
-                <input class="form-control" id="name2" name="name" type="text" placeholder="name">
-                <div class="error" id="err-name" style="display: none;">Please enter name</div>
-              </div> <!-- /Form-name -->
-  
-              <div class="form-group">
-                <label for="email2">Email</label>
-                <input class="form-control" id="email2" name="email" type="text" placeholder="email">
-                <div class="error" id="err-emailvld" style="display: none;">E-mail is not a valid format</div> 
-              </div> <!-- /Form-email -->
-  
-              <div class="form-group">
-                <label for="message2">Message</label>
-                <textarea class="form-control" id="message2" name="message" rows="5" placeholder="message">Message</textarea>
-  
-                <div class="error" id="err-message" style="display: none;">Please enter message</div>
-              </div> <!-- /col -->
-  
-              <div class="row">            
-                  <button type="submit" class="btn btn-primary btn-shadow btn-rounded w-md" id="send">Send</button>
-                </div> <!-- /col -->
-              </div> <!-- /row -->
-  
-            </form> <!-- /form -->
-          </div> <!-- end col -->
-  
-        </div> <!-- end row -->
-            
-      </div>
-</section>
+<footer class="bg-light text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0" >
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #3b5998;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #55acee;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #dd4b39;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #ac2bac;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #0082ca;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+      <!-- Github -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #333333;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color:#F28F50;">
+    © 2021 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">Far Eastern University (Digi-tams)</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 
 
 {% endblock content %}
