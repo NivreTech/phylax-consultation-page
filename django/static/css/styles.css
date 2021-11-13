@@ -3,14 +3,14 @@
 ##############*/
 
 .header {
-    background: rgb(177, 177, 177) url("img/header.png") no-repeat fixed center; 
-    min-height: 1000px;
+    background: rgb(255, 255, 255) url("img/header.png") no-repeat fixed center; 
+    min-height: 0px;
     font-family:'Source Sans Pro', sans-serif;
   }
   
   @media (min-width:768px) {
     .header {
-      padding-bottom:120px;
+      padding-bottom:0px;
     }
   }
   
