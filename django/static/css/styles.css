@@ -349,18 +349,18 @@
   
   .title-box .border,.btn-primary,.back-to-top,
   .logo i,.question-q-box,.social-circle li a:hover {
-    background-color: #f16000 !important;
+    background-color: #F28F50 !important;
   }
   .title-box .title-alt,.text-colored,.footer a:hover,
   .navbar-custom .navbar-nav li a:hover,
   .navbar-custom .navbar-nav li a:focus,
   .navbar-custom .navbar-nav li a:active,
   .navbar-custom .navbar-nav li.active a {
-    color: #f16000;
+    color: #F28F50;
   }
   
   .btn-primary {
-    border: 1px solid #f16000 !important;
+    border: 1px solid #F28F50 !important;
   }
   .btn-primary:hover,
   .btn-primary:focus,
@@ -377,8 +377,8 @@
   .open>.dropdown-toggle.btn-primary.focus, 
   .open>.dropdown-toggle.btn-primary:focus, 
   .open>.dropdown-toggle.btn-primary:hover {
-    background-color: #d85600 !important;
-    border: 1px solid #d85600 !important;
+    background-color: #F28F50 !important;
+    border: 1px solid #F28F50 !important;
   }
   
   .btn-shadow.btn-primary {
