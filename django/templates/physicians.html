@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% load static %}
 <body>
 
     <div class="container-fluid">
@@ -15,7 +16,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">
+                <a class="nav-link" href="{% url 'appointment' %}">
                   <span data-feather="file"></span>
                   Appointment
                 </a>
@@ -38,7 +39,7 @@
   
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-            <h1 class="h2">Book an Appointment</h1>
+            <h1 class="h2">Find a Physician</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
             </div>
           </div>
@@ -51,56 +52,140 @@
               </div>
             </div> 
           {% endif %}
-          <div class="container-fluid px-1 py-0 mx-auto">
-              <div class="row d-flex">
-                  <div class="col-xl-7 col-lg-8 col-md-9 col-11">
-                      <p class="">Use the following form to contact us and request an appointment.</p>
-                      <div class="mt-5">
-                          <form class="form-card" method="POST" action="{% url 'appointment' %}">
-                          {% csrf_token %}
-                              <div class="row justify-content-between text-left">
-                                  <div class="form-group col-sm-6 flex-column d-flex"> 
-                                  <label class="form-control-label px-3">First name<span class="text-danger"> *</span>
-                                  </label> 
-                                  <input required type="text" id="fname" name="fname" placeholder="Enter your first name" onblur="validate(1)"> 
-                              </div>
-      
-                              <div class="form-group col-sm-6 flex-column d-flex"> 
-                                  <label class="form-control-label px-3">Last name<span class="text-danger"> *</span></label> 
-                                  <input required type="text" id="lname" name="lname" placeholder="Enter your last name" onblur="validate(2)"> 
-                              </div>
-      
-                              </div>
-      
-                              <div class="row justify-content-between text-left">
-      
-                                  <div class="form-group col-sm-6 flex-column d-flex"> 
-                                      <label class="form-control-label px-3">Email<span class="text-danger"> *</span>
-                                      </label> 
-                                      <input type="text" id="email" name="email" placeholder="" onblur="validate(3)"> 
-                                  </div>
-      
-                                  <div class="form-group col-sm-6 flex-column d-flex"> 
-                                   <label class="form-control-label px-3">Phone number<span class="text-danger"> *</span></label> 
-                                    <input type="text" id="mob" name="mobile" placeholder="" onblur="validate(4)"> 
-                                  </div>
-      
-                              </div>
-      
-                              <div class="row justify-content-between text-left">
-                                  <div class="form-group col-12 flex-column d-flex"> 
-                                      <label class="form-control-label px-3">Your request<span class="text-danger"> *</span></label> 
-                                      <textarea type="text" id="ans" name="request" placeholder="" onblur="validate(6)"></textarea> 
-                                  </div>
-                              </div>
-                              <div class="row justify-content-end">
-                                  <div class="form-group col-sm-6"> <button type="submit" class="btn-block btn-primary">Send</button> </div>
-                              </div>
-                          </form>
+          <section id="services">
+            <div class="container">
+              <div class="row">
+                <!-- Team Member 1 -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                  <div class="card">
+                    <img src="{% static 'img/service1.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="mb-0 font-size: 12">Michael W. Anderson, MD</h5>
+                      <div class="">Allergy & Immunology</div>
+                      <div>Address: 63 W Underwood St Orlando FL, 32806</div>
+                      <div>Phone: (407) 872-1110</div>
+                      <div class="">
+                        <button type="button" class="btn btn-success mt-3" style="color: #fff;background-color: #F28F50;border: #F28F50;">Message</button>
                       </div>
+                    </div>
                   </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                  <div class="card">
+                    <img src="{% static 'img/service2.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="mb-0">Jose Andrade, MD</h5>
+                      <div class="">Allergy & Immunology.</div>
+                      <div>Address: 5412 Curry Ford Rd Orlando FL, 32812</div>
+                      <div>Phone: (407) 339-3002</div>
+                      <div class="">
+                        <button type="button" class="btn btn-success mt-3" style="color: #fff;background-color: #F28F50;border: #F28F50;">Message</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                  <div class="card">
+                    <img src="{% static 'img/service3.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="mb-0">Paige Nicole Collins, APRN</h5>
+                      <div class="">Cardiovascular Disease</div>
+                      <div>Address: 601 Oak Commons Blvd FL, 34741</div>
+                      <div>Phone: (407) 846-0626</div>
+                      <div class="">
+                        <button type="button" class="btn btn-success mt-3" style="color: #fff;background-color: #F28F50;border: #F28F50;">Message</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                  <div class="card">
+                    <img src="{% static 'img/service4.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="mb-0">Jennifer L. Kinaga, MD</h5>
+                      <div class="">Cardiovascular Disease</div>
+                      <div>Address: 1222 S. Orange Ave. 4th Fl.</div>
+                      <div>Phone: (321) 841-6444</div>
+                      <div class="">
+                        <button type="button" class="btn btn-success mt-3" style="color: #fff;background-color: #F28F50;border: #F28F50;">Message</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-          </div>
+              <!-- /.row -->
+            
+            </div>
+          </section>
+          <section id="contact" class="m-4 p-4">
+            <div class="container card p-3">
+                <!-- <div class="row text-center">
+                    <div class="col-sm-6">
+                    <div class="contact-detail-box">
+                        <i class="far fa-envelope text-colored fa-3x"></i>
+                        <h4>Get In Touch</h4>
+                        <abbr title="Phone">P:</abbr> (123) 456-7890<br>
+                        E: <a href="mailto:email@email.com" class="text-muted">email@email.com</a>
+                    </div>
+                    </div>
+            
+                    <div class="col-sm-6">
+                    <div class="contact-detail-box">
+                        <i class="fa fa-map-marker fa-3x text-colored"></i>
+                        <h4>Our Location</h4>
+            
+                        <address>
+                        795 Folsom Ave, Suite 600<br>
+                        San Francisco, CA 94107<br>
+                    </address>
+                    </div>
+                    </div>
+                </div> -->
+                <div class="row">
+                    <div class="col-sm-6">
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed/v1/place?q=New+York+University&amp;key=AIzaSyBSFRN6WWGYwmFi498qXXsD2UwkbmD74v4" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="width: 100%; height: 360px;"></iframe>
+                    </div>
+                    </div><!-- end col -->
+            
+                    <!-- Contact form -->
+                    <div class="col-sm-6">
+                    <form role="form" name="ajax-form" id="ajax-form" method="post" class="form-main" action="{% url 'home' %}">
+                    {% csrf_token %}
+                        <div class="form-group">
+                        <label for="name2">Name</label>
+                        <input class="form-control" id="name2" name="name" type="text" placeholder="Name">
+                        <div class="error" id="err-name" style="display: none;">Please enter name</div>
+                        </div> <!-- /Form-name -->
+            
+                        <div class="form-group">
+                        <label for="email2">Email</label>
+                        <input class="form-control" id="email2" name="email" type="text" placeholder="Email">
+                        <div class="error" id="err-emailvld" style="display: none;">E-mail is not a valid format</div> 
+                        </div> <!-- /Form-email -->
+            
+                        <div class="form-group">
+                        <label for="message2">Message</label>
+                        <textarea class="form-control" id="message2" name="message" rows="5" placeholder="Message"></textarea>
+            
+                        <div class="error" id="err-message" style="display: none;">Please enter message</div>
+                        </div> <!-- /col -->
+            
+                        <div class="row">            
+                            <button type="submit" class="btn btn-rounded w-md ml-3 mt-3" style= "background-color: #F28F50; color: #fff;" id="send">Send</button>
+                        </div> <!-- /col -->
+                        </div> <!-- /row -->
+            
+                    </form> <!-- /form -->
+                    </div> <!-- end col -->
+            
+                </div> <!-- end row -->
+                    
+                </div>
+        </section>
     </div>
   
     <!-- Bootstrap core JavaScript
@@ -149,72 +234,5 @@
       });
     </script>
   </body>
-
-<section id="contact" class="m-4 p-4">
-    <div class="container">
-        <!-- <div class="row text-center">
-            <div class="col-sm-6">
-            <div class="contact-detail-box">
-                <i class="far fa-envelope text-colored fa-3x"></i>
-                <h4>Get In Touch</h4>
-                <abbr title="Phone">P:</abbr> (123) 456-7890<br>
-                E: <a href="mailto:email@email.com" class="text-muted">email@email.com</a>
-            </div>
-            </div>
-    
-            <div class="col-sm-6">
-            <div class="contact-detail-box">
-                <i class="fa fa-map-marker fa-3x text-colored"></i>
-                <h4>Our Location</h4>
-    
-                <address>
-                795 Folsom Ave, Suite 600<br>
-                San Francisco, CA 94107<br>
-            </address>
-            </div>
-            </div>
-        </div> -->
-        <div class="row">
-            <div class="col-sm-6">
-            <div class="contact-map">
-                <iframe src="https://www.google.com/maps/embed/v1/place?q=New+York+University&amp;key=AIzaSyBSFRN6WWGYwmFi498qXXsD2UwkbmD74v4" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="width: 100%; height: 360px;"></iframe>
-            </div>
-            </div><!-- end col -->
-    
-            <!-- Contact form -->
-            <div class="col-sm-6">
-            <form role="form" name="ajax-form" id="ajax-form" method="post" class="form-main" action="{% url 'home' %}">
-            {% csrf_token %}
-                <div class="form-group">
-                <label for="name2">Name</label>
-                <input class="form-control" id="name2" name="name" type="text" placeholder="Name">
-                <div class="error" id="err-name" style="display: none;">Please enter name</div>
-                </div> <!-- /Form-name -->
-    
-                <div class="form-group">
-                <label for="email2">Email</label>
-                <input class="form-control" id="email2" name="email" type="text" placeholder="Email">
-                <div class="error" id="err-emailvld" style="display: none;">E-mail is not a valid format</div> 
-                </div> <!-- /Form-email -->
-    
-                <div class="form-group">
-                <label for="message2">Message</label>
-                <textarea class="form-control" id="message2" name="message" rows="5" placeholder="Message"></textarea>
-    
-                <div class="error" id="err-message" style="display: none;">Please enter message</div>
-                </div> <!-- /col -->
-    
-                <div class="row">            
-                    <button type="submit" class="btn btn-primary btn-rounded w-md ml-3 mt-3" id="send">Send</button>
-                </div> <!-- /col -->
-                </div> <!-- /row -->
-    
-            </form> <!-- /form -->
-            </div> <!-- end col -->
-    
-        </div> <!-- end row -->
-            
-        </div>
-</section>
 
 {% endblock content %}
