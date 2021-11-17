@@ -7,9 +7,9 @@
     <div class="col-12 col-md-6 d-flex align-items-center order-1 order-md-0" style="color: white;">
       <div class="p-10 ml-3">
         <h1 style="font-family: 'Source Sans Pro'; font-size:xx-large; font-weight: 900; font-size: 70px;">Wellness within your reach</h1>
-        <p style="font-family: 'Open Sans'; font-weight:300; font-size: 21px;">(Ålesund is a town and municipality in lorem ipsum malte youg chet brus jagget)</p>
+        <p style="font-family: 'Open Sans'; font-weight:300; font-size: 21px;">(Health care is a collaborative process. Here at Phylax, we are dedicated on bringing everyone together so as to make a system that works for the good of all. )</p>
         <div class="dropdown">
-          <a class="btn btn-success btn-rounded dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="btn btn-rounded dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #7189C4; color: #fff;">
             Sign In
           </a>
         
@@ -29,35 +29,61 @@
 {% endblock cta %}
 
 {% block content %}
+
+<style>
+  {% block style %}
+  .circle-icon {
+    background: #7189C4;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+    padding: 1px;
+}
+  {% endblock style %}
+</style>
+
 <section id="features">
   <div class="container marketing py-5">
     <div class="row text-center ">
       <div class="col-lg-8 mx-auto">
           <h1 class="display-4" style="font-family: 'Open Sans'; font-weight: 300;">Explore Phylax</h1>
           <hr>
-          <p class="lead" style="font-family: 'Open Sans'; font-weight: 300; font-size: 21px;">(We care for you)</p>
       </div>
     </div>
     <!-- Three columns of text below the carousel -->
     <div class="row text-center py-5">
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle mb-3" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#7189C4"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2 style="font-family: 'Source Sans Pro'; font-size:xx-large; font-weight: 900; font-size: 30px;">Phylax (Care) </h2>
+        <!-- <svg class="bd-placeholder-img rounded-circle mb-3" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#7189C4"/>
+          
+        </svg> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff" class="bi bi-person-square circle-icon" viewBox="-3.5 -3.5 23 23">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
+        </svg>
+        <h2 class="mt-3" style="font-family: 'Source Sans Pro'; font-size:xx-large; font-weight: 900; font-size: 30px;">Our Mission</h2>
         <p class="lead" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">Get the care that you need in your own time at the comfort of your home.</p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle mb-3" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#7189C4"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2 style="font-family: 'Source Sans Pro'; font-size:xx-large; font-weight: 900; font-size: 30px;">Phylax (Adherency Index)</h2>
-        <p class="lead" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <!-- <svg class="bd-placeholder-img rounded-circle mb-3" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#7189C4"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff" class="bi bi-bandaid-fill circle-icon" viewBox="-2.5 -2.5 21 21">
+          <path fill-rule="evenodd" d="m2.68 7.676 6.49-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492.001-.002Zm5.71-2.858a.5.5 0 1 1-.708.707.5.5 0 0 1 .707-.707ZM6.974 6.939a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707ZM5.56 8.354a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm2.828 2.828a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707Zm1.414-2.121a.5.5 0 1 1-.707.707.5.5 0 0 1 .707-.707Zm1.414-.707a.5.5 0 1 0-.706-.708.5.5 0 0 0 .707.708Zm-4.242.707a.5.5 0 1 1-.707.707.5.5 0 0 1 .707-.707Zm1.414-.707a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm1.414-2.122a.5.5 0 1 1-.707.707.5.5 0 0 1 .707-.707ZM8.646 3.354l4 4 .708-.708-4-4-.708.708Zm-1.292 9.292-4-4-.708.708 4 4 .708-.708Z"/>
+        </svg>
+        <h2 class="mt-3" style="font-family: 'Source Sans Pro'; font-size:xx-large; font-weight: 900; font-size: 30px;">Our Approach</h2>
+        <p class="lead" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">Using the Phylax Adherence Index, experience our personalized program that uses a combination of health measurement tools with collaboration between physician and patient</p>
 
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle mb-3" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#7189C4"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2 style="font-family: 'Source Sans Pro'; font-size:xx-large; font-weight: 900; font-size: 30px;">Phylax News</h2>
-        <p class="lead" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">Stay updated on the latest health news and trends, wellness & prevention tips, and much more from Phylax.</p>
+        <!-- <svg class="bd-placeholder-img rounded-circle mb-3" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#7189C4"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff" class="bi bi-journal-bookmark circle-icon" viewBox="-2.5 -2.5 21 21">
+          <path fill-rule="evenodd" d="M6 8V1h1v6.117L8.743 6.07a.5.5 0 0 1 .514 0L11 7.117V1h1v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8z"/>
+          <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+          <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+        </svg>
+        <h2 class= "mt-3" style="font-family: 'Source Sans Pro'; font-size:xx-large; font-weight: 900; font-size: 30px;">Be Informed</h2>
+        <p class="lead" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">Know the importance of adherence to your recovery</p>
       </div><!-- /.col-lg-4 -->
     </div>
   </div>
@@ -65,10 +91,12 @@
 
 <section id="newletters">
   <div class="row p-4 p-md-5 mb-4 text-white rounded" style="background-color: #F28F50;">
-    <div class="col-md-6 px-0">
-      <h1 class="display-4 fst-italic" style="font-family: 'Source Sans Pro'; font-size:xx-large; font-weight: 900; font-size: 60px;">Title of a longer featured blog post</h1>
-      <p class="lead my-3" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
-      <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
+    <div class="col-md-6 px-2">
+      <h1 class="display-4 fst-italic" style="font-family: 'Source Sans Pro'; font-size:xx-large; font-weight: 900; font-size: 60px;">Adherence to long-term therapies</h1>
+      <p class="lead my-3" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">This report is part of the work of the Adherence to Long-term Therapies Project, a global initiative
+        launched in 2001 by the Noncommunicable Diseases and Mental Health Cluster of the World Health
+        Organization.</p>
+      <p class="lead mb-0"><a href="https://www.who.int/chp/knowledge/publications/adherence_full_report.pdf" class="text-white fw-bold">Continue reading...</a></p>
     </div>
     <div class="col-md-6 px-0">
       <img class= "" alt= "" src="{% static 'img/nurse.jpg' %}" style="max-height: 100%; max-width: 100%; object-fit: contain;">
@@ -80,13 +108,13 @@
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
           <strong class="d-inline-block mb-2" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px; color:black;">World</strong>
-          <h3 class="mb-0"style="font-family: 'Source Sans Pro'; font-size:xx-large; font-weight: 900;">Featured post</h3>
+          <h3 class="mb-0"style="font-family: 'Source Sans Pro'; font-size:xx-large; font-weight: 900;">Improve medication adherence among people with hypertension</h3>
           <div class="mb-1 text-muted" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">Nov 12</div>
-          <p class="card-text mb-auto" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="stretched-link" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">Continue reading</a>
+          <p class="card-text mb-auto" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">There are many reasons a person doesn't use or take medications properly, and a number of those reasons aren't in their control. .</p>
+          <a href="https://www.news-medical.net/news/20211007/Additional-health-care-support-needed-to-improve-medication-adherence-among-people-with-hypertension.aspx" class="stretched-link" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">Continue reading</a>
         </div>
         <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#7189C4"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          <svg class="bd-placeholder-img" width="200" height="380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#7189C4"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
 
         </div>
       </div>
@@ -94,14 +122,14 @@
     <div class="col-md-5 mx-auto">
       <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px; color: black;">Design</strong>
-          <h3 class="mb-0"style="font-family: 'Source Sans Pro'; font-size:xx-large; font-weight: 900;">Post title</h3>
+          <strong class="d-inline-block mb-2" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px; color: black;">World</strong>
+          <h3 class="mb-0"style="font-family: 'Source Sans Pro'; font-size:xx-large; font-weight: 900;">The Value of Drug Adherence</h3>
           <div class="mb-1 text-muted" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">Nov 11</div>
-          <p class="mb-auto" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="stretched-link" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">Continue reading</a>
+          <p class="mb-auto" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">Reductions in hospitalizations and emergency department visits are key drivers of declining health costs associated with improved medication adherence.</p>
+          <a href="https://www.pfizer.com/news/featured_stories/featured_stories_detail/the_value_of_drug_adherence" class="stretched-link" style="font-family: 'Open Sans'; font-weight: 300; font-size: 16px;">Continue reading</a>
         </div>
         <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#7189C4"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          <svg class="bd-placeholder-img" width="200" height="330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#7189C4"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
 
         </div>
       </div>
